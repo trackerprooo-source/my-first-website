@@ -8,21 +8,21 @@
 <meta name="theme-color" content="#17243e">
 <meta name="color-scheme" content="dark">
 
-<!-- Link previews (Instagram, WhatsApp, Facebook, X).
-     After deploying, replace YOUR-DOMAIN.vercel.app with your real address, so the preview image shows. -->
+<!-- Link previews (Instagram, WhatsApp, Facebook, X). -->
+<link rel="canonical" href="https://wosito-creative.vercel.app/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Wosito Creative">
 <meta property="og:title" content="Wosito Creative · Ads that look expensive. Priced for small brands.">
 <meta property="og:description" content="AI-made commercial videos and marketing posters, without the cost of a physical shoot.">
-<meta property="og:url" content="https://YOUR-DOMAIN.vercel.app/">
-<meta property="og:image" content="https://YOUR-DOMAIN.vercel.app/assets/og-image.jpg">
+<meta property="og:url" content="https://wosito-creative.vercel.app/">
+<meta property="og:image" content="https://wosito-creative.vercel.app/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Wosito Creative logo on navy">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Wosito Creative · Ads that look expensive. Priced for small brands.">
 <meta name="twitter:description" content="AI-made commercial videos and marketing posters, without the cost of a physical shoot.">
-<meta name="twitter:image" content="https://YOUR-DOMAIN.vercel.app/assets/og-image.jpg">
+<meta name="twitter:image" content="https://wosito-creative.vercel.app/assets/og-image.jpg">
 
 <!-- Favicon: the W mark as inline SVG -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317243e'/%3E%3Cg transform='translate(8 19) scale(.048)'%3E%3Cpath fill='%23F4F6FA' fill-rule='evenodd' d='M308.5 0L427.8 238.2L491.4 111.9L436.4 0ZM142.1 0L345 404.2L412.1 269.6L277.9 0ZM0 0Q14.1 16.5 23.7 30Q33.4 43.6 41.2 56.1Q49.1 68.7 58.7 85.8Q68.3 102.8 171.3 304.7Q274.3 506.7 278.8 513.3Q283.4 520 289.4 525.5Q295.5 531 302 534.3Q308.5 537.7 315.3 539.1Q322.2 540.4 363.6 540.4Q405 540.4 409.5 539.1Q414.1 537.7 420.3 534.5Q426.6 531.4 431.7 526.9Q436.8 522.4 440 518.4Q443.1 514.5 448.2 505.7Q453.3 496.9 558.7 285.3Q664.1 73.8 701.7 0L577.3 0Q348.1 457.2 343.8 463.9L111.1 0ZM496.8 200.8L539.8 285.5L496.8 370.2L453.8 285.5ZM1000 0L894 0L657 463.5L642.1 434.1L863.4 0L731.9 0Q528.3 406.6 525.5 413.3Q522.8 419.9 521.6 425.4Q520.4 430.9 520.4 435.6Q520.4 440.3 521 444.3Q521.6 448.2 523 452.7Q524.3 457.2 528.5 466.1Q532.6 474.9 542.2 493.1Q551.8 511.4 555.7 516.9Q559.7 522.4 562.8 525.3Q565.9 528.3 569.9 531Q573.8 533.8 577.5 535.5Q581.2 537.3 587.7 538.9Q594.2 540.4 636.6 540.4Q679 540.4 683.9 539.6Q688.8 538.9 696 535.7Q703.3 532.6 707 529.8Q710.8 527.1 715.1 522.6Q719.4 518.1 725.7 507.7Q731.9 497.3 767.7 427Q803.4 356.8 870.1 227.8Q936.8 98.9 953.7 69.7Q970.6 40.4 976.8 31Q983.1 21.6 1000 0Z'/%3E%3C/g%3E%3C/svg%3E">
@@ -399,19 +399,21 @@ main,footer{position:relative;z-index:1}
 }
 .process-cta{display:flex;justify-content:center;margin-top:clamp(44px,6vw,60px)}
 
-/* Packages */
-.pricing{display:grid;gap:22px;max-width:980px;margin-inline:auto}
-@media (min-width:860px){.pricing{grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}}
-.pcard{position:relative;display:flex;flex-direction:column;padding:36px 26px 28px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.012))}
+/* Pricing */
+.pricing{display:grid;gap:22px;max-width:1120px;margin-inline:auto}
+@media (min-width:960px){.pricing{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch;padding-block:14px}.pcard.is-featured{margin-block:-14px;padding-block:54px 46px}}
+.pcard{position:relative;display:flex;flex-direction:column;min-width:0;padding:36px 26px 28px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.012))}
 @media (min-width:600px){.pcard{padding:40px 34px 32px}}
-.pcard.is-featured{border-color:rgba(217,190,140,.55);background:linear-gradient(180deg,rgba(217,190,140,.10),rgba(255,255,255,.015) 58%);box-shadow:0 40px 90px -50px rgba(217,190,140,.45)}
-.pcard__badge{position:absolute;top:-14px;left:26px;display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:5px;background:var(--gold);color:var(--gold-ink);font:600 .6875rem/1 var(--font-body);letter-spacing:.16em;text-transform:uppercase}
-@media (min-width:600px){.pcard__badge{left:34px}}
+@media (min-width:960px){.pcard{padding:40px 28px 30px}}
+.pcard.is-featured{border:1.5px solid rgba(217,190,140,.75);background:linear-gradient(180deg,rgba(217,190,140,.12),rgba(255,255,255,.015) 58%);box-shadow:0 40px 90px -50px rgba(217,190,140,.55)}
+.pcard__badge{display:inline-flex;align-items:center;gap:7px;padding:7px 10px;border-radius:5px;background:var(--gold);color:var(--gold-ink);font:600 .625rem/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
 .pcard__badge::before{content:"";width:5px;height:10px;background:currentColor;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
-.pcard__name{font-family:var(--font-display);font-size:1.2rem;line-height:1.3}
+.pcard__name{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;font-family:var(--font-display);font-size:1.2rem;line-height:1.3;letter-spacing:.06em;text-transform:uppercase}
+.pcard__per{margin-left:.3em;font-family:var(--font-body);font-size:1rem;letter-spacing:0;color:var(--muted)}
 .pcard__tag{margin-top:8px;color:var(--muted)}
 .pcard__price{display:flex;flex-direction:column;gap:8px;margin:26px 0 24px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .pcard__amt{font-family:var(--font-display);font-size:clamp(1.9rem,1.5rem + 1.4vw,2.5rem);line-height:1.1;letter-spacing:-.01em}
+.pcard__price{margin-top:22px}
 .pcard__lbl{font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 .pcard .dia-list li{color:var(--text)}
 .pcard .dia-list li small{display:block;color:var(--muted);font-size:.875rem}
@@ -425,6 +427,15 @@ main,footer{position:relative;z-index:1}
 @media (max-width:479.98px){.brow{flex-direction:column;align-items:flex-start;gap:2px}.brow dd{text-align:left}}
 .pcard .btn{width:100%;margin-top:auto}
 .pricing-note{max-width:60ch;margin:30px auto 0;text-align:center;color:var(--muted);font-size:.9375rem}
+/* Delivery table (What you get) */
+.dtable td,.dtable th{white-space:normal}
+.dtable tbody th{font-family:var(--font-display);font-size:.95rem;letter-spacing:.06em;text-transform:uppercase}
+.dtable td.tot{color:var(--gold);font-weight:500}
+@media (max-width:719.98px){.dtable tr{grid-template-columns:minmax(0,1fr)}.dtable td[data-label]{text-align:right}}
+/* Video caption line */
+.player__line{flex-basis:100%;font-size:.9375rem;color:var(--muted)}
+/* Testimonials */
+.quote{margin:0}.quote p{color:var(--text)}.quote footer{margin-top:16px;color:var(--muted);font-size:.9375rem}.quote footer b{display:block;font-weight:500;color:var(--text)}
 
 /* FAQ */
 .faq{max-width:840px;margin-inline:auto;border-top:1px solid var(--line)}
@@ -457,40 +468,7 @@ main,footer{position:relative;z-index:1}
   .js .cta__art.is-in path{stroke-dashoffset:0}
 }
 
-/* ---------- Cost comparison view ---------- */
-.cost-top{padding-top:calc(var(--nav-h) + clamp(44px,7vw,96px))}
-.cost-title{font-family:var(--font-display);font-size:clamp(1.5rem,.95rem + 3vw,3.2rem);line-height:1.2;letter-spacing:-.01em;max-width:21ch;text-wrap:balance}
-.cost-title:focus{outline:none}
-.saving{margin-top:clamp(40px,6vw,64px);padding:clamp(26px,4vw,44px);border:1px solid rgba(217,190,140,.4);border-radius:18px;background:linear-gradient(180deg,rgba(217,190,140,.09),rgba(255,255,255,.012) 72%)}
-.saving__label{font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-.saving__num{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 .3em;margin-top:14px;font-family:var(--font-display);font-size:clamp(1.85rem,.9rem + 5vw,4.4rem);line-height:1.12;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.saving__num .dash{color:var(--muted)}
-.saving__note{margin-top:12px;color:var(--gold);font-weight:500;font-size:1.0625rem}
-.totals{display:grid;gap:16px;margin-top:16px}
-@media (min-width:640px){.totals{grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}}
-.total{padding:26px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.012))}
-.total.is-ai{border-color:rgba(217,190,140,.5)}
-.total__label{font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-.total__num{margin-top:12px;font-family:var(--font-display);font-size:clamp(1.55rem,1.1rem + 2vw,2.6rem);line-height:1.15;font-variant-numeric:tabular-nums}
-.total.is-ai .total__num{color:var(--gold)}
-.bars{margin:clamp(44px,6vw,72px) 0 0;padding:0}
-.bars__title{font-family:var(--font-display);font-size:.8125rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.bar-row{margin-top:22px}
-.bar-row__top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px;font-size:.9375rem}
-.bar-row__top b{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
-.bar{position:relative;height:16px;border-radius:999px;background:rgba(255,255,255,.06);overflow:hidden}
-.bar__fill,.bar__range{position:absolute;top:0;bottom:0;transform-origin:left center}
-.bar__fill{left:0;width:var(--w);border-radius:999px;background:linear-gradient(90deg,rgba(244,246,250,.5),rgba(244,246,250,.8))}
-.bar__range{left:var(--a);width:var(--b);border-radius:0 999px 999px 0;background:repeating-linear-gradient(135deg,rgba(244,246,250,.42) 0 5px,rgba(244,246,250,.16) 5px 10px)}
-.bar.is-ai .bar__fill{min-width:10px;background:var(--gold)}
-.bars__key{display:flex;align-items:center;gap:10px;margin-top:14px;color:var(--muted);font-size:.8125rem}
-.bars__key i{width:22px;height:10px;border-radius:999px;background:repeating-linear-gradient(135deg,rgba(244,246,250,.42) 0 5px,rgba(244,246,250,.16) 5px 10px)}
-@media (prefers-reduced-motion:no-preference){
-  .js .bars .bar__fill,.js .bars .bar__range{transform:scaleX(0);transition:transform 1.4s var(--ease) .15s}
-  .js .bars .bar__range{transition-delay:1.2s;transition-duration:.8s}
-  .js .bars .bar.is-ai .bar__fill{transition-delay:.45s}
-  .js .bars.is-in .bar__fill,.js .bars.is-in .bar__range{transform:none}
-}
+/* Table (delivery) */
 .ctable-wrap{overflow:hidden;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.01))}
 .ctable{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
 .ctable th,.ctable td{padding:18px 20px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle;font-weight:400}
@@ -500,10 +478,6 @@ main,footer{position:relative;z-index:1}
 .ctable tbody th{color:var(--text)}
 .ctable tbody tr{transition:background-color .25s}
 .ctable tbody tr:hover{background:rgba(255,255,255,.025)}
-.nn{display:inline-flex;align-items:center;gap:8px;color:var(--muted)}
-.nn::before{content:"";flex:none;width:6px;height:12px;background:var(--gold);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
-.nn b{font-weight:600;color:var(--text)}
-.dash-na{color:var(--muted)}
 .ctable tfoot th,.ctable tfoot td{border-bottom:0;border-top:1px solid rgba(217,190,140,.45);background:rgba(217,190,140,.08);font-weight:600}
 .ctable tfoot th{font-size:.75rem;letter-spacing:.18em}
 .ctable tfoot .ai{font-family:var(--font-display);font-size:1.15rem;color:var(--gold)}
@@ -526,12 +500,6 @@ main,footer{position:relative;z-index:1}
   .ctable tfoot th,.ctable tfoot td{background:none;border-top:0}
   .ctable tfoot td[data-label]{border-top:1px solid rgba(217,190,140,.3)}
 }
-.cost-notes{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:6px;color:var(--muted);font-size:.875rem;max-width:72ch}
-.means{display:grid;gap:16px}
-@media (min-width:860px){.means{grid-template-columns:repeat(3,1fr);gap:20px}}
-.means li{position:relative;padding:26px 24px 26px 52px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.012));color:var(--text)}
-.means li::before{left:24px;top:calc(26px + .42em)}
-.cost-back{margin-top:28px}
 
 /* Footer */
 .footer{padding:56px 0 calc(40px + env(safe-area-inset-bottom));border-top:1px solid var(--line)}
@@ -617,10 +585,9 @@ html.has-cursor :-webkit-full-screen,html.has-cursor :-webkit-full-screen *{curs
       <ul class="nav__menu" id="navMenu">
         <li><a href="#why">Why AI ads</a></li>
         <li><a href="#monthly">What you get</a></li>
+        <li><a href="#pricing">Pricing</a></li>
         <li><a href="#work">Our work</a></li>
         <li><a href="#process">How it works</a></li>
-        <li><a href="#packages">Packages</a></li>
-        <li><a href="#cost" data-route="cost">Cost</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li class="nav__cta"><a class="btn btn--primary btn--sm" data-onboarding href="https://wa.me/8801747664515">Start onboarding</a></li>
       </ul>
@@ -681,7 +648,7 @@ html.has-cursor :-webkit-full-screen,html.has-cursor :-webkit-full-screen *{curs
         <article class="card reveal">
           <span class="card__num">01</span>
           <h3 class="card__title">The cost problem</h3>
-          <p>In Bangladesh, a physical ad needs models, a studio, a crew and a location. For most small brands, that bill is simply out of reach.</p>
+          <p>A traditional ad shoot needs models, a studio, a crew and a location. For most small brands, that’s out of budget.</p>
         </article>
         <article class="card reveal" style="--d:.1s">
           <span class="card__num">02</span>
@@ -715,36 +682,39 @@ html.has-cursor :-webkit-full-screen,html.has-cursor :-webkit-full-screen *{curs
         <h2 class="h2" id="monthly-title">Fresh ads for your brand, every month.</h2>
         <p class="lead">Static marketing posters plus commercial videos, delivered in two batches, so new content keeps coming through the month.</p>
       </header>
-      <div class="month">
-        <div class="stat reveal">
-          <p class="stat__num" data-fill="posters">15</p>
-          <p class="stat__label">static marketing posters every month</p>
-          <div class="dots reveal-self" id="posterDots" aria-hidden="true"></div>
-          <p class="stat__note"><span data-fill="p0.b1posters">6</span> in batch 1, <span data-fill="p0.b2posters">9</span> in batch 2</p>
-        </div>
-        <div class="stat reveal" style="--d:.12s">
-          <p class="stat__num"><span data-fill="p0.videos">3</span><span class="stat__or">or</span><span data-fill="p1.videos">2</span></p>
-          <p class="stat__label">commercial videos every month</p>
-          <p class="stat__note"><span data-fill="p0.videos">3</span> with the <span data-fill="p0.label">720p</span> package, <span data-fill="p1.videos">2</span> with the <span data-fill="p1.label">1080p</span> package</p>
-        </div>
+      <div class="ctable-wrap reveal">
+        <table class="ctable dtable">
+          <caption class="sr-only">Monthly delivery for each plan</caption>
+          <thead><tr><th scope="col">Tier</th><th scope="col">Batch 1 (<span data-fill="b1Deadline">within 5 days</span>)</th><th scope="col">Batch 2 (<span data-fill="b2Deadline">by day 15</span>)</th><th scope="col">Total</th></tr></thead>
+          <tbody id="deliveryRows"><tr><th scope="row">Starter</th><td data-label="Batch 1 (within 5 days)">1 video + 4 posters</td><td data-label="Batch 2 (by day 15)">1 video + 6 posters</td><td class="tot" data-label="Total">2 videos (720p) + 10 posters</td></tr><tr><th scope="row">Growth</th><td data-label="Batch 1 (within 5 days)">1 HD video + 6 posters</td><td data-label="Batch 2 (by day 15)">1 HD video + 9 posters</td><td class="tot" data-label="Total">2 HD videos + 15 posters</td></tr><tr><th scope="row">Premium</th><td data-label="Batch 1 (within 5 days)">2 HD videos + 12 posters</td><td data-label="Batch 2 (by day 15)">2 HD videos + 18 posters</td><td class="tot" data-label="Total">4 HD videos + 30 posters</td></tr></tbody>
+        </table>
       </div>
-      <ol class="batches">
-        <li class="batch reveal">
-          <span class="batch__when"><svg width="7" height="14" viewBox="0 0 10 20" aria-hidden="true"><path fill="currentColor" d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg>Batch 1 · <span data-fill="b1Deadline">within 5 days</span></span>
-          <span class="batch__what"><span data-fill="p0.b1text">1 video + 6 posters</span></span>
-        </li>
-        <li class="batch reveal" style="--d:.12s">
-          <span class="batch__when"><svg width="7" height="14" viewBox="0 0 10 20" aria-hidden="true"><path fill="currentColor" d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg>Batch 2 · <span data-fill="b2Deadline">by day 15</span></span>
-          <span class="batch__what"><span data-fill="p0.b2text">2 videos + 9 posters</span> with <span data-fill="p0.label">720p</span><small>or <span data-fill="p1.b2text">1 video + 9 posters</span> with <span data-fill="p1.label">1080p</span></small></span>
-        </li>
-      </ol>
-      <p class="more-link reveal"><a class="text-link" href="#packages">Compare the two packages <svg width="14" height="14" aria-hidden="true"><use href="#i-right"/></svg></a></p>
+      <p class="more-link reveal"><a class="text-link" href="#pricing">See pricing <svg width="14" height="14" aria-hidden="true"><use href="#i-right"/></svg></a></p>
     </div>
   </section>
 
   <div class="divider" aria-hidden="true"><span class="divider__line"></span><svg class="dia-svg" viewBox="0 0 10 20"><use href="#dia"/></svg><span class="divider__line"></span></div>
 
-  <!-- ================= 4. OUR WORK ================= -->
+  <!-- ================= 4. PRICING ================= -->
+  <section class="section" id="pricing" aria-labelledby="pricing-title">
+    <div class="container">
+      <header class="section__head section__head--center reveal">
+        <p class="eyebrow">Pricing</p>
+        <h2 class="h2" id="pricing-title">Three plans. Clear monthly prices.</h2>
+        <p class="lead">Commercial videos and marketing posters every month. We accept payment by bank transfer.</p>
+      </header>
+      <div class="pricing" id="pricingCards">
+        <noscript>
+          <p class="pricing-note">Starter: $160 / month, 2 commercial videos (720p) and 10 marketing posters. Growth (most popular): $320 / month, 2 commercial videos in sharp 1080p HD and 15 marketing posters. Premium: $640 / month, 4 commercial videos in sharp 1080p HD and 30 marketing posters.</p>
+        </noscript>
+      </div>
+      <p class="pricing-note reveal">Pay 50% before your campaign begins and the remaining 50% after you receive all your content. Payment by bank transfer. No hidden fees.</p>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span class="divider__line"></span><svg class="dia-svg" viewBox="0 0 10 20"><use href="#dia"/></svg><span class="divider__line"></span></div>
+
+  <!-- ================= 5. OUR WORK ================= -->
   <section class="section" id="work" aria-labelledby="work-title">
     <div class="container">
       <header class="section__head reveal">
@@ -785,7 +755,22 @@ html.has-cursor :-webkit-full-screen,html.has-cursor :-webkit-full-screen *{curs
 
   <div class="divider" aria-hidden="true"><span class="divider__line"></span><svg class="dia-svg" viewBox="0 0 10 20"><use href="#dia"/></svg><span class="divider__line"></span></div>
 
-  <!-- ================= 5. HOW IT WORKS ================= -->
+  <!-- ================= 6. WHAT CLIENTS SAY (hidden until CONFIG.testimonials has entries) ================= -->
+  <div id="testimonialsBlock" hidden>
+  <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow">Testimonials</p>
+        <h2 class="h2" id="testimonials-title">What clients say</h2>
+      </header>
+      <div class="cards" id="testimonialList"></div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span class="divider__line"></span><svg class="dia-svg" viewBox="0 0 10 20"><use href="#dia"/></svg><span class="divider__line"></span></div>
+  </div>
+
+  <!-- ================= 7. HOW IT WORKS ================= -->
   <section class="section" id="process" aria-labelledby="process-title">
     <div class="container">
       <header class="section__head reveal">
@@ -797,25 +782,25 @@ html.has-cursor :-webkit-full-screen,html.has-cursor :-webkit-full-screen *{curs
           <span class="step__mark" aria-hidden="true"><svg viewBox="0 0 10 20"><path d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg></span>
           <span class="step__num">01</span>
           <h3 class="step__title">Fill in the onboarding form</h3>
-          <p>Tell us about your brand, your colours and tone, and anything we must avoid. Then send your logo and product photos on WhatsApp.</p>
+          <p>Fill in the onboarding form and send your logo and product photos on WhatsApp.</p>
         </li>
         <li class="step reveal" style="--d:.1s">
           <span class="step__mark" aria-hidden="true"><svg viewBox="0 0 10 20"><path d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg></span>
           <span class="step__num">02</span>
-          <h3 class="step__title">Pay the upfront budget</h3>
-          <p><span data-fill="p0.upfront">5,000 tk</span> for <span data-fill="p0.label">720p</span> or <span data-fill="p1.upfront">10,000 tk</span> for <span data-fill="p1.label">1080p</span>. Work begins as soon as it’s paid.</p>
+          <h3 class="step__title">Pay 50% to start</h3>
+          <p>Pay 50% by bank transfer. Work starts as soon as it’s received.</p>
         </li>
         <li class="step reveal" style="--d:.2s">
           <span class="step__mark" aria-hidden="true"><svg viewBox="0 0 10 20"><path d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg></span>
           <span class="step__num">03</span>
-          <h3 class="step__title">First batch <span data-fill="b1Deadline">within 5 days</span></h3>
-          <p>You receive <span data-fill="p0.b1text">1 video + 6 posters</span>.</p>
+          <h3 class="step__title">Receive your two batches</h3>
+          <p>Receive batch 1 <span data-fill="b1Deadline">within 5 days</span> and batch 2 <span data-fill="b2Deadline">by day 15</span>, and request any changes.</p>
         </li>
         <li class="step reveal" style="--d:.3s">
           <span class="step__mark" aria-hidden="true"><svg viewBox="0 0 10 20"><path d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg></span>
           <span class="step__num">04</span>
-          <h3 class="step__title">Second batch <span data-fill="b2Deadline">by day 15</span></h3>
-          <p>The rest of the month: <span data-fill="p0.b2text">2 videos + 9 posters</span> with <span data-fill="p0.label">720p</span>, or <span data-fill="p1.b2text">1 video + 9 posters</span> with <span data-fill="p1.label">1080p</span>.</p>
+          <h3 class="step__title">Pay the remaining 50%</h3>
+          <p>Once you’ve received all your content, pay the remaining 50%.</p>
         </li>
       </ol>
       <div class="process-cta reveal"><a class="btn btn--primary magnetic" data-onboarding href="https://wa.me/8801747664515">Start onboarding</a></div>
@@ -824,26 +809,7 @@ html.has-cursor :-webkit-full-screen,html.has-cursor :-webkit-full-screen *{curs
 
   <div class="divider" aria-hidden="true"><span class="divider__line"></span><svg class="dia-svg" viewBox="0 0 10 20"><use href="#dia"/></svg><span class="divider__line"></span></div>
 
-  <!-- ================= 6. PACKAGES ================= -->
-  <section class="section" id="packages" aria-labelledby="packages-title">
-    <div class="container">
-      <header class="section__head section__head--center reveal">
-        <p class="eyebrow">Packages</p>
-        <h2 class="h2" id="packages-title">Two packages. Clear prices.</h2>
-        <p class="lead">Pick the video quality that suits your brand. Both packages include <span data-fill="posters">15</span> static posters every month.</p>
-      </header>
-      <div class="pricing" id="pricing">
-        <noscript>
-          <p class="pricing-note">720p package: upfront budget 5,000 tk, 3 commercial videos and 15 static posters per month. 1080p package: upfront budget 10,000 tk, 2 commercial videos and 15 static posters per month. Main payment: 40,000 tk, due 10 days after the start.</p>
-        </noscript>
-      </div>
-      <p class="pricing-note reveal">Work begins after the upfront budget is paid. The main payment of <span data-fill="mainPayment">40,000 tk</span> is due <span data-fill="mainPaymentDue">10 days after the start</span>.</p>
-    </div>
-  </section>
-
-  <div class="divider" aria-hidden="true"><span class="divider__line"></span><svg class="dia-svg" viewBox="0 0 10 20"><use href="#dia"/></svg><span class="divider__line"></span></div>
-
-  <!-- ================= 7. FAQ ================= -->
+  <!-- ================= 8. FAQ ================= -->
   <section class="section" id="faq" aria-labelledby="faq-title">
     <div class="container">
       <header class="section__head section__head--center reveal">
@@ -857,29 +823,37 @@ html.has-cursor :-webkit-full-screen,html.has-cursor :-webkit-full-screen *{curs
         </div>
         <div class="faq__item">
           <h3 class="faq__q"><button class="faq__btn" type="button" id="faq-b2" aria-controls="faq-p2">Can I request specific ideas?<svg class="faq__icon" viewBox="0 0 10 20" aria-hidden="true"><path d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg></button></h3>
-          <div class="faq__panel" id="faq-p2" role="region" aria-labelledby="faq-b2"><div class="faq__inner"><p>Yes. Describe any video or poster you have in mind in the onboarding form, or tell us on WhatsApp. A request just needs to fit your brand, your product and the monthly quantities of your package.</p></div></div>
+          <div class="faq__panel" id="faq-p2" role="region" aria-labelledby="faq-b2"><div class="faq__inner"><p>Yes. Describe any video or poster you have in mind in the onboarding form, or tell us on WhatsApp. A request just needs to fit your brand, your product and the monthly quantities of your plan.</p></div></div>
         </div>
         <div class="faq__item">
-          <h3 class="faq__q"><button class="faq__btn" type="button" id="faq-b3" aria-controls="faq-p3">Which package should I pick?<svg class="faq__icon" viewBox="0 0 10 20" aria-hidden="true"><path d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg></button></h3>
-          <div class="faq__panel" id="faq-p3" role="region" aria-labelledby="faq-b3"><div class="faq__inner"><p>Pick <span data-fill="p0.label">720p</span> if you want more videos: <span data-fill="p0.videos">3</span> commercial videos a month. Pick <span data-fill="p1.label">1080p</span> if picture quality matters most: <span data-fill="p1.videos">2</span> commercial videos a month in sharper 1080p. Both include <span data-fill="posters">15</span> static posters a month.</p></div></div>
+          <h3 class="faq__q"><button class="faq__btn" type="button" id="faq-b3" aria-controls="faq-p3">Which plan should I choose?<svg class="faq__icon" viewBox="0 0 10 20" aria-hidden="true"><path d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg></button></h3>
+          <div class="faq__panel" id="faq-p3" role="region" aria-labelledby="faq-b3"><div class="faq__inner"><p>Starter is for brands testing AI ads. Growth, our most popular plan, adds HD video and more posters for brands posting every week. Premium doubles Growth’s videos and posters for brands running paid campaigns.</p></div></div>
         </div>
         <div class="faq__item">
           <h3 class="faq__q"><button class="faq__btn" type="button" id="faq-b4" aria-controls="faq-p4">How fast will I get my first videos and posters?<svg class="faq__icon" viewBox="0 0 10 20" aria-hidden="true"><path d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg></button></h3>
-          <div class="faq__panel" id="faq-p4" role="region" aria-labelledby="faq-b4"><div class="faq__inner"><p>Batch 1 arrives <span data-fill="b1Deadline">within 5 days</span>: <span data-fill="p0.b1text">1 video + 6 posters</span>. Batch 2 follows <span data-fill="b2Deadline">by day 15</span> with the rest of the month’s content. The clock starts once we have your onboarding form and the upfront budget is paid.</p></div></div>
+          <div class="faq__panel" id="faq-p4" role="region" aria-labelledby="faq-b4"><div class="faq__inner"><p>Batch 1 arrives <span data-fill="b1Deadline">within 5 days</span> and batch 2 follows <span data-fill="b2Deadline">by day 15</span> with the rest of the month’s content. The exact count for each plan is in the delivery table under <a href="#monthly">What you get</a>. The clock starts once we have your onboarding form and your first 50% payment.</p></div></div>
         </div>
         <div class="faq__item">
-          <h3 class="faq__q"><button class="faq__btn" type="button" id="faq-b5" aria-controls="faq-p5">Can I use this for products other than perfume?<svg class="faq__icon" viewBox="0 0 10 20" aria-hidden="true"><path d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg></button></h3>
-          <div class="faq__panel" id="faq-p5" role="region" aria-labelledby="faq-b5"><div class="faq__inner"><p>Yes. Perfume and attar are where we started, but any product brand is welcome.</p></div></div>
+          <h3 class="faq__q"><button class="faq__btn" type="button" id="faq-b5" aria-controls="faq-p5">How does payment work?<svg class="faq__icon" viewBox="0 0 10 20" aria-hidden="true"><path d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg></button></h3>
+          <div class="faq__panel" id="faq-p5" role="region" aria-labelledby="faq-b5"><div class="faq__inner"><p>You pay 50% by bank transfer before your campaign starts, and the remaining 50% after you’ve received all your content. Prices are per month. We accept payment by bank transfer.</p></div></div>
         </div>
         <div class="faq__item">
-          <h3 class="faq__q"><button class="faq__btn" type="button" id="faq-b6" aria-controls="faq-p6">Will the ads follow my brand’s rules?<svg class="faq__icon" viewBox="0 0 10 20" aria-hidden="true"><path d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg></button></h3>
-          <div class="faq__panel" id="faq-p6" role="region" aria-labelledby="faq-b6"><div class="faq__inner"><p>Yes. The onboarding form has a section for your rules: words we must never use, claims we must never make, and products or topics that are off limits. We follow them, along with your colours and tone, in every video and poster we make for you.</p></div></div>
+          <h3 class="faq__q"><button class="faq__btn" type="button" id="faq-b6" aria-controls="faq-p6">Can I ask for changes?<svg class="faq__icon" viewBox="0 0 10 20" aria-hidden="true"><path d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg></button></h3>
+          <div class="faq__panel" id="faq-p6" role="region" aria-labelledby="faq-b6"><div class="faq__inner"><p>Yes. Each poster includes up to 2 rounds of changes, and each video includes 1 round of changes. Send your notes on WhatsApp after each batch.</p></div></div>
+        </div>
+        <div class="faq__item">
+          <h3 class="faq__q"><button class="faq__btn" type="button" id="faq-b7" aria-controls="faq-p7">Can I use this for products other than perfume?<svg class="faq__icon" viewBox="0 0 10 20" aria-hidden="true"><path d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg></button></h3>
+          <div class="faq__panel" id="faq-p7" role="region" aria-labelledby="faq-b7"><div class="faq__inner"><p>Yes. Perfume and attar are where we started, but any product brand is welcome.</p></div></div>
+        </div>
+        <div class="faq__item">
+          <h3 class="faq__q"><button class="faq__btn" type="button" id="faq-b8" aria-controls="faq-p8">Will the ads follow my brand’s rules?<svg class="faq__icon" viewBox="0 0 10 20" aria-hidden="true"><path d="M5 .8 9.2 10 5 19.2.8 10Z"/></svg></button></h3>
+          <div class="faq__panel" id="faq-p8" role="region" aria-labelledby="faq-b8"><div class="faq__inner"><p>Yes. The onboarding form has a section for your rules: words we must never use, claims we must never make, and products or topics that are off limits. We follow them, along with your colours and tone, in every video and poster we make for you.</p></div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= 8. FINAL CALL TO ACTION ================= -->
+  <!-- ================= 9. FINAL CALL TO ACTION ================= -->
   <section class="section cta" id="start" aria-labelledby="cta-title">
     <svg class="cta__art reveal-self" viewBox="0 0 200 400" aria-hidden="true" preserveAspectRatio="xMidYMid meet"><path pathLength="1" d="M100 2 198 200 100 398 2 200Z"/><path pathLength="1" d="M100 70 164 200 100 330 36 200Z"/></svg>
     <div class="container" style="position:relative">
@@ -894,11 +868,9 @@ html.has-cursor :-webkit-full-screen,html.has-cursor :-webkit-full-screen *{curs
   </section>
 </div>
 
-<!-- ================= COST COMPARISON (#cost) ================= -->
-<div class="view" id="view-cost" data-view="cost" hidden></div>
 </main>
 
-<!-- ================= 9. FOOTER ================= -->
+<!-- ================= 10. FOOTER ================= -->
 <footer class="footer" id="footer">
   <div class="container">
     <div class="footer__grid">
@@ -5409,20 +5381,27 @@ var CONFIG = {
 
   // Portfolio videos. To add one, copy a line and change it.
   //   title    shown under the player
+  //   caption  optional one-line description shown under the title
   //   src      the video file (MP4, H.264 + AAC plays everywhere)
-  //   poster   optional still image shown before play
+  //   poster   still image shown before play (a frame from the video)
+  //   duration optional length in seconds, shown before the video loads
   //   category optional; filter chips appear by themselves once there are 2 or more categories
   //   ratio    optional, e.g. "9:16", "1:1", "16:9" (the player also reads it from the file)
   videos: [
-    { title: "Perfume commercial, by the sea", src: "assets/work-perfume.mp4", poster: "assets/work-perfume-poster.jpg", category: "Perfume", ratio: "16:9" }
+    { title: "Perfume commercial, by the sea", caption: "An AI-made perfume commercial, built from the product photos.", src: "assets/work-perfume.mp4", poster: "assets/work-perfume-poster.jpg", duration: 23.87, category: "Perfume", ratio: "16:9" }
   ],
 
   // Portfolio posters. To add one, copy a line and change it. Any shape works (portrait, square, landscape).
+  //   title  shown on hover and in the full-screen viewer
+  //   alt    optional description for screen readers (falls back to the title)
   //   src    the full-size image shown in the viewer
   //   thumb  optional smaller copy for the grid (loads faster on phones)
   //   ratio  optional width:height, keeps the grid steady while images load
   posters: [
-    { title: "Chocolate, “Taste the dark”", src: "assets/poster-chocolate.jpg", thumb: "assets/poster-chocolate-thumb.jpg", ratio: "1744:2336" },
+    { title: "Perfume, “Sun Tide”", alt: "AI-made perfume ad: couple in the sea at sunset holding a Sun Tide bottle", src: "assets/sun-tide-perfume.jpg", thumb: "assets/sun-tide-perfume-thumb.jpg", ratio: "1600:1207" },
+    { title: "Perfume, lifestyle", alt: "AI-made perfume lifestyle ad: woman with woven leather tote on brick steps", src: "assets/perfume-lifestyle-tote.jpg", thumb: "assets/perfume-lifestyle-tote-thumb.jpg", ratio: "1600:1207" },
+    { title: "Perfume, “Éclat Douceur”", alt: "AI-made holiday perfume ad: frosted bottle wrapped in satin ribbon on navy", src: "assets/eclat-douceur-holiday.jpg", thumb: "assets/eclat-douceur-holiday-thumb.jpg", ratio: "1600:1207" },
+    { title: "Skincare, “Play longer”", alt: "AI-made skincare ad: 'Play Longer' on a clay tennis court with Aminu bottles", src: "assets/aminu-play-longer.jpg", thumb: "assets/aminu-play-longer-thumb.jpg", ratio: "1:1" },
     { title: "Perfume, “Breathe blue”", src: "assets/poster-breathe-blue.jpg", thumb: "assets/poster-breathe-blue-thumb.jpg", ratio: "1:1" },
     { title: "Perfume, “Fresh air, in a bottle”", src: "assets/poster-fresh-air.jpg", thumb: "assets/poster-fresh-air-thumb.jpg", ratio: "2688:1520" },
     { title: "Perfume, “Dive in”", src: "assets/poster-dive-in.jpg", thumb: "assets/poster-dive-in-thumb.jpg", ratio: "1:1" },
@@ -5432,92 +5411,57 @@ var CONFIG = {
     { title: "Fashion, winter jacket", src: "assets/poster-winter-jacket.jpg", thumb: "assets/poster-winter-jacket-thumb.jpg", ratio: "2048:1536" }
   ],
 
-  // Packages and prices. Amounts are in taka (tk).
+  // Pricing plans, in US dollars per month. These numbers fill the pricing cards
+  // and the delivery table in "What you get", so both always match.
+  //   hd       true = videos in sharp 1080p HD, false = 720p
+  //   batch1   delivered within batch1Days;  batch2 delivered by batch2Day
+  //   Payment is always 50% before we start and 50% after all content is delivered.
   packages: [
     {
-      label: "720p",
-      name: "720p package",
-      tagline: "More videos every month",
-      upfront: 5000,                       // upfront budget, paid before work starts
-      videosPerMonth: 3,
-      postersPerMonth: 15,
-      batch1: { videos: 1, posters: 6 },   // delivered within batch1Days
-      batch2: { videos: 2, posters: 9 },   // delivered by batch2Day
+      name: "Starter",
+      price: 160,
+      hd: false,
+      videosPerMonth: 2,
+      postersPerMonth: 10,
+      batch1: { videos: 1, posters: 4 },
+      batch2: { videos: 1, posters: 6 },
       featured: false,
-      badge: ""
+      badge: "",
+      helper: ""
     },
     {
-      label: "1080p",
-      name: "1080p package",
-      tagline: "Sharper 1080p videos",
-      upfront: 10000,
+      name: "Growth",
+      price: 320,
+      hd: true,
       videosPerMonth: 2,
       postersPerMonth: 15,
       batch1: { videos: 1, posters: 6 },
       batch2: { videos: 1, posters: 9 },
       featured: true,                      // highlighted card
-      badge: "Best quality"
+      badge: "Most popular",
+      helper: ""
+    },
+    {
+      name: "Premium",
+      price: 640,
+      hd: true,
+      videosPerMonth: 4,
+      postersPerMonth: 30,
+      batch1: { videos: 2, posters: 12 },
+      batch2: { videos: 2, posters: 18 },
+      featured: false,
+      badge: "",
+      helper: "Best for brands running paid campaigns that need HD video and a steady flow of posters."
     }
   ],
-  mainPayment: 40000,                      // same for both packages
-  mainPaymentDue: "10 days after the start",
   batch1Days: 5,                           // "Batch 1 within 5 days"
   batch2Day: 15,                           // "Batch 2 by day 15"
-  currency: "tk"
-};
-
-/* =====================================================================
-   COST_DATA: every number and label on the "Cost comparison" tab (#cost).
-   Amounts are plain numbers in US dollars; commas are added automatically.
-   ===================================================================== */
-var COST_DATA = {
   currency: "$",
-  navLabel: "Cost",
-  pageTitle: "Cost comparison · Wosito Creative",
-  eyebrow: "Cost comparison",
-  headline: "A physical ad costs thousands. Ours costs hundreds.",
-  support: "Same goal, a fraction of the price: AI-made commercial videos and posters for small brands.",
 
-  savings: { label: "You save about", min: 3700, max: 4500, note: "(roughly 90% less)" },
-
-  physicalLabel: "Physical advertisement",
-  physicalTotal: { min: 4100, max: 4900 },
-  aiLabel: "Wosito Creative (AI)",
-  aiTotal: 410,
-
-  barsTitle: "Side by side, drawn to scale",
-  barsRangeKey: "Range between the low and high estimate",
-
-  tableTitle: "Cost breakdown",
-  headers: ["#", "Cost item", "Physical advertisement (approx.)", "Wosito Creative, AI (approx.)"],
-  cardLabels: ["Physical ad (approx.)", "Wosito Creative, AI"],   // shorter column names used on phones
-  // physical: [low, high], [single amount], or null for "–".  ai: a number; 0 shows "Not needed".
-  rows: [
-    { item: "Models or actors",                  physical: [800, 1000],  ai: 0 },
-    { item: "Studio or location rental",         physical: [700, 900],   ai: 0 },
-    { item: "Camera crew and equipment",         physical: [1200, 1350], ai: 0 },
-    { item: "Travel, setup and props",           physical: [500, 600],   ai: 0 },
-    { item: "Editing, colour and sound",         physical: [650, 800],   ai: 110 },
-    { item: "Creative planning and other costs", physical: [250],        ai: 100 },
-    { item: "AI video and poster generation",    physical: null,         ai: 200 }
-  ],
-  totalLabel: "TOTAL",
-  notNeeded: "Not needed",
-  notes: [
-    "The Wosito Creative price is for our 1080p package: commercial videos plus 15 static posters.",
-    "Physical costs are approximate estimates for one advertisement in Bangladesh and vary by shoot."
-  ],
-
-  pointsEyebrow: "For your brand",
-  pointsTitle: "What this means for you",
-  points: [
-    "No studio, models or crew to organise.",
-    "Ready fast, with the first batch in 5 days.",
-    "The work follows your brand’s colours and rules."
-  ],
-
-  ctaTitle: "See what this looks like for your brand",
-  backLabel: "Back to portfolio"
+  // Client testimonials for the "What clients say" section.
+  // The section stays hidden while this list is empty. To show it, add real entries like:
+  //   { name: "Client name", brand: "Brand name", quote: "What they said." }
+  testimonials: []
 };
 
 /* =====================================================================
@@ -5534,9 +5478,10 @@ var COST_DATA = {
   var finePointer = mm("(hover: hover) and (pointer: fine)");
 
   function isSet(v) { return typeof v === "string" && v.trim() !== "" && !/_HERE$/i.test(v.trim()); }
-  function money(n) { return Number(n).toLocaleString("en-US") + " " + CONFIG.currency; }
+  function money(n) { return CONFIG.currency + Number(n).toLocaleString("en-US"); }
   function plural(n, one, many) { return n + " " + (n === 1 ? one : many); }
-  function batchText(b) { return plural(b.videos, "video", "videos") + " + " + plural(b.posters, "poster", "posters"); }
+  function batchText(b, hd) { return plural(b.videos, hd ? "HD video" : "video", hd ? "HD videos" : "videos") + " + " + plural(b.posters, "poster", "posters"); }
+  function totalText(p) { return (p.hd ? plural(p.videosPerMonth, "HD video", "HD videos") : plural(p.videosPerMonth, "video", "videos") + " (720p)") + " + " + plural(p.postersPerMonth, "poster", "posters"); }
   function waUrl(msg) { return "https://wa.me/" + CONFIG.whatsappNumber + (msg ? "?text=" + encodeURIComponent(msg) : ""); }
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
   function parseRatio(r) {
@@ -5561,38 +5506,43 @@ var COST_DATA = {
 
   /* ---------- 1. Text that comes from CONFIG ---------- */
   function fillText() {
-    var P = CONFIG.packages || [];
     var map = {
-      posters: P[0] ? String(P[0].postersPerMonth) : "",
       b1Deadline: "within " + CONFIG.batch1Days + " days",
       b2Deadline: "by day " + CONFIG.batch2Day,
-      mainPayment: money(CONFIG.mainPayment),
-      mainPaymentDue: CONFIG.mainPaymentDue,
       email: CONFIG.email,
       whatsappDisplay: CONFIG.whatsappDisplay,
       instagramHandle: isSet(CONFIG.instagram) ? CONFIG.instagram.replace(/^https?:\/\/(www\.)?instagram\.com\//i, "@").replace(/\/+$/, "") : ""
     };
-    P.forEach(function (p, i) {
-      var k = "p" + i + ".";
-      map[k + "label"] = p.label;
-      map[k + "upfront"] = money(p.upfront);
-      map[k + "videos"] = String(p.videosPerMonth);
-      map[k + "b1posters"] = String(p.batch1.posters);
-      map[k + "b2posters"] = String(p.batch2.posters);
-      map[k + "b1text"] = batchText(p.batch1);
-      map[k + "b2text"] = batchText(p.batch2);
-    });
     $$("[data-fill]").forEach(function (el) {
       var v = map[el.getAttribute("data-fill")];
       if (v != null && v !== "") el.textContent = v;
     });
-    // 15 diamonds: batch 1 in gold, batch 2 in white
-    var dots = $("#posterDots");
-    if (dots && P[0]) {
-      var html = "", total = P[0].postersPerMonth, b1 = P[0].batch1.posters;
-      for (var i = 0; i < total; i++) html += '<i class="' + (i < b1 ? "b1" : "b2") + '" style="--i:' + i + '"></i>';
-      dots.innerHTML = html;
-    }
+  }
+
+  /* Delivery table in "What you get" */
+  function renderDelivery() {
+    var body = $("#deliveryRows");
+    if (!body) return;
+    var b1 = "Batch 1 (within " + CONFIG.batch1Days + " days)", b2 = "Batch 2 (by day " + CONFIG.batch2Day + ")";
+    body.innerHTML = (CONFIG.packages || []).map(function (p) {
+      return '<tr><th scope="row">' + esc(p.name) + "</th>" +
+        '<td data-label="' + esc(b1) + '">' + esc(batchText(p.batch1, p.hd)) + "</td>" +
+        '<td data-label="' + esc(b2) + '">' + esc(batchText(p.batch2, p.hd)) + "</td>" +
+        '<td class="tot" data-label="Total">' + esc(totalText(p)) + "</td></tr>";
+    }).join("");
+  }
+
+  /* "What clients say": rendered only when real testimonials exist */
+  function renderTestimonials() {
+    var block = $("#testimonialsBlock"), list = $("#testimonialList");
+    var items = (CONFIG.testimonials || []).filter(function (t) { return t && t.quote; });
+    if (!block || !list) return;
+    if (!items.length) { block.parentNode.removeChild(block); return; }
+    list.innerHTML = items.map(function (t, i) {
+      return '<blockquote class="card quote reveal" style="--d:' + (i % 3) * 0.1 + 's"><p>“' + esc(t.quote) + '”</p>' +
+        "<footer><b>" + esc(t.name || "") + "</b>" + esc(t.brand || "") + "</footer></blockquote>";
+    }).join("");
+    block.hidden = false;
   }
 
   /* ---------- 2. Links (onboarding, WhatsApp, email, Instagram) ---------- */
@@ -5608,31 +5558,30 @@ var COST_DATA = {
     });
   }
 
-  /* ---------- 3. Packages ---------- */
+  /* ---------- 3. Pricing ---------- */
   function renderPackages() {
-    var wrap = $("#pricing");
+    var wrap = $("#pricingCards");
     if (!wrap) return;
     wrap.innerHTML = "";
     (CONFIG.packages || []).forEach(function (p, i) {
+      var half = money(p.price / 2);
       var card = doc.createElement("article");
       card.className = "pcard reveal" + (p.featured ? " is-featured" : "");
       card.style.setProperty("--d", (i * 0.12) + "s");
       card.setAttribute("aria-label", p.name + (p.badge ? ", " + p.badge : ""));
       card.innerHTML =
-        (p.badge ? '<span class="pcard__badge">' + esc(p.badge) + "</span>" : "") +
-        '<h3 class="pcard__name">' + esc(p.name) + "</h3>" +
-        '<p class="pcard__tag">' + esc(p.tagline) + "</p>" +
-        '<div class="pcard__price"><span class="pcard__amt">' + esc(money(p.upfront)) + '</span><span class="pcard__lbl">Upfront budget</span></div>' +
+        '<h3 class="pcard__name">' + esc(p.name) + (p.badge ? '<span class="pcard__badge">' + esc(p.badge) + "</span>" : "") + "</h3>" +
+        (p.helper ? '<p class="pcard__tag">' + esc(p.helper) + "</p>" : "") +
+        '<div class="pcard__price"><span class="pcard__amt">' + esc(money(p.price)) + '<span class="pcard__per">/ month</span></span></div>' +
         '<ul class="dia-list">' +
-          "<li>" + esc(plural(p.videosPerMonth, "commercial video", "commercial videos")) + " per month</li>" +
-          "<li>" + esc(plural(p.postersPerMonth, "static poster", "static posters")) + " per month</li>" +
-          "<li>Main payment: " + esc(money(CONFIG.mainPayment)) + "<small>Due " + esc(CONFIG.mainPaymentDue) + "</small></li>" +
+          "<li>" + esc(plural(p.videosPerMonth, "commercial video", "commercial videos")) + (p.hd ? " in sharp 1080p HD" : " (720p)") + "</li>" +
+          "<li>" + esc(plural(p.postersPerMonth, "marketing poster", "marketing posters")) + "</li>" +
         "</ul>" +
-        '<div class="pcard__batches"><h4>Delivery each month</h4><dl>' +
-          '<div class="brow"><dt>Batch 1, within ' + esc(CONFIG.batch1Days) + " days</dt><dd>" + esc(batchText(p.batch1)) + "</dd></div>" +
-          '<div class="brow"><dt>Batch 2, by day ' + esc(CONFIG.batch2Day) + "</dt><dd>" + esc(batchText(p.batch2)) + "</dd></div>" +
+        '<div class="pcard__batches"><h4>Payment</h4><dl>' +
+          '<div class="brow"><dt>Before we start</dt><dd>' + esc(half) + "</dd></div>" +
+          '<div class="brow"><dt>After all content is delivered</dt><dd>' + esc(half) + "</dd></div>" +
         "</dl></div>" +
-        '<a class="btn ' + (p.featured ? "btn--primary" : "btn--ghost") + ' magnetic" data-onboarding href="#">Choose this package</a>';
+        '<a class="btn ' + (p.featured ? "btn--primary" : "btn--ghost") + ' magnetic" data-onboarding href="https://wa.me/' + esc(CONFIG.whatsappNumber) + '">Start onboarding</a>';
       wrap.appendChild(card);
     });
   }
@@ -5651,7 +5600,6 @@ var COST_DATA = {
   }
 
   var film = { settle: function () {} };
-  function onCostView() { return root.getAttribute("data-view") === "cost"; }
 
   function initFilm() {
     var box = $("#heroFilm"), video = $("#heroVideo");
@@ -5694,7 +5642,7 @@ var COST_DATA = {
       attempt++;
       video.muted = false; syncMute(); bSound.hidden = true;   // each source tries with sound first
       video.src = src;
-      if (!onCostView()) play(attempt);   // opened straight on #cost: load quietly, never play
+      play(attempt);
     }
     function holdEnd() {   // show the final logo frame, silently
       bSound.hidden = true;
@@ -5709,12 +5657,10 @@ var COST_DATA = {
       if (!started) { try { video.pause(); } catch (e) {} if (video.readyState >= 2) { markStarted(); holdEnd(); } return; }
       if (!box.classList.contains("is-ended")) holdEnd();
     };
-    video.addEventListener("loadeddata", function () { if (!started && !gaveUp && onCostView()) { markStarted(); holdEnd(); } });
 
     video.addEventListener("error", function () { if (!started && !gaveUp) next(); });
     video.addEventListener("playing", function () {
       if (!started) markStarted();
-      if (onCostView()) holdEnd();
     });
     video.addEventListener("ended", function () {
       box.classList.add("is-ended");
@@ -5746,152 +5692,8 @@ var COST_DATA = {
     video.muted = false;   // try with sound first
     syncMute();
     next();
-    stall = setTimeout(function () { if (!onCostView()) giveUp(); }, 4000);   // very slow connection: show the coded logo instead
+    stall = setTimeout(giveUp, 4000);   // very slow connection: show the coded logo instead
     setTimeout(heroIn, 1200);            // headline never waits on the video
-  }
-
-  /* ---------- 4b. Cost comparison view (#cost) ---------- */
-  function usd(n) { return COST_DATA.currency + Number(n).toLocaleString("en-US"); }
-  function usdRange(a, b) { return (b == null || a === b) ? usd(a) : usd(a) + " – " + usd(b); }
-  var animateCounts = !reduceMotion && ("IntersectionObserver" in window);
-
-  function renderCost() {
-    var D = COST_DATA, el = $("#view-cost");
-    if (!el) return;
-    var H = D.headers, S = D.savings, L = D.cardLabels || [H[2], H[3]];
-    var pmax = D.physicalTotal.max, pmin = D.physicalTotal.min;
-    var count = function (n) { return '<span class="count" data-to="' + n + '">' + esc(animateCounts ? usd(0) : usd(n)) + "</span>"; };
-    var divider = '<div class="divider" aria-hidden="true"><span class="divider__line"></span><svg class="dia-svg" viewBox="0 0 10 20"><use href="#dia"/></svg><span class="divider__line"></span></div>';
-
-    var rows = D.rows.map(function (r, i) {
-      var phys = r.physical == null ? '<span class="dash-na" aria-hidden="true">–</span><span class="sr-only">Not applicable</span>' : esc(usdRange(r.physical[0], r.physical[1]));
-      var ai = r.ai === 0 ? '<span class="nn"><b>' + esc(usd(0)) + "</b>" + esc(D.notNeeded) + "</span>" : esc(usd(r.ai));
-      return '<tr role="row"><td class="idx" role="cell">' + (i + 1) + '</td><th scope="row" role="rowheader">' + esc(r.item) + "</th>" +
-        '<td class="num" role="cell" data-label="' + esc(L[0]) + '">' + phys + "</td>" +
-        '<td class="num" role="cell" data-label="' + esc(L[1]) + '">' + ai + "</td></tr>";
-    }).join("");
-
-    el.innerHTML =
-      '<section class="section cost-top" aria-labelledby="cost-title"><div class="container">' +
-        '<p class="eyebrow">' + esc(D.eyebrow) + "</p>" +
-        '<h1 class="cost-title" id="cost-title" tabindex="-1">' + esc(D.headline) + "</h1>" +
-        '<p class="lead">' + esc(D.support) + "</p>" +
-        '<div class="saving reveal-self" id="costSaving">' +
-          '<p class="sr-only">' + esc(S.label + " " + usdRange(S.min, S.max) + " " + S.note) + "</p>" +
-          '<div aria-hidden="true"><p class="saving__label">' + esc(S.label) + "</p>" +
-          '<p class="saving__num">' + count(S.min) + '<span class="dash">–</span>' + count(S.max) + "</p>" +
-          '<p class="saving__note">' + esc(S.note) + "</p></div>" +
-        "</div>" +
-        '<div class="totals">' +
-          '<div class="total reveal"><p class="total__label">' + esc(D.physicalLabel) + '</p><p class="total__num">' + esc(usdRange(pmin, pmax)) + "</p></div>" +
-          '<div class="total is-ai reveal" style="--d:.1s"><p class="total__label">' + esc(D.aiLabel) + '</p><p class="total__num">' + esc(usd(D.aiTotal)) + "</p></div>" +
-        "</div>" +
-        '<figure class="bars reveal-self">' +
-          '<figcaption class="bars__title">' + esc(D.barsTitle) + "</figcaption>" +
-          '<div class="bar-row"><div class="bar-row__top"><span>' + esc(D.physicalLabel) + "</span><b>" + esc(usdRange(pmin, pmax)) + "</b></div>" +
-            '<div class="bar" aria-hidden="true"><span class="bar__fill" style="--w:' + (pmin / pmax * 100).toFixed(2) + '%"></span><span class="bar__range" style="--a:' + (pmin / pmax * 100).toFixed(2) + "%;--b:" + ((pmax - pmin) / pmax * 100).toFixed(2) + '%"></span></div></div>' +
-          '<div class="bar-row"><div class="bar-row__top"><span>' + esc(D.aiLabel) + "</span><b>" + esc(usd(D.aiTotal)) + "</b></div>" +
-            '<div class="bar is-ai" aria-hidden="true"><span class="bar__fill" style="--w:' + (D.aiTotal / pmax * 100).toFixed(2) + '%"></span></div></div>' +
-          '<p class="bars__key" aria-hidden="true"><i></i>' + esc(D.barsRangeKey) + "</p>" +
-        "</figure>" +
-      "</div></section>" +
-      divider +
-      '<section class="section" aria-labelledby="cost-table-title"><div class="container">' +
-        '<header class="section__head reveal"><p class="eyebrow">' + esc(D.tableTitle) + '</p><h2 class="h2" id="cost-table-title">' + esc(D.physicalLabel) + " vs " + esc(D.aiLabel) + "</h2></header>" +
-        '<div class="ctable-wrap reveal"><table class="ctable" role="table">' +
-          '<caption class="sr-only">' + esc(D.tableTitle) + ": " + esc(D.physicalLabel) + " vs " + esc(D.aiLabel) + "</caption>" +
-          '<thead role="rowgroup"><tr role="row"><th scope="col" class="idx" role="columnheader">' + esc(H[0]) + '</th><th scope="col" role="columnheader">' + esc(H[1]) + '</th><th scope="col" class="num" role="columnheader">' + esc(H[2]) + '</th><th scope="col" class="num" role="columnheader">' + esc(H[3]) + "</th></tr></thead>" +
-          '<tbody role="rowgroup">' + rows + "</tbody>" +
-          '<tfoot role="rowgroup"><tr role="row"><td class="idx" role="cell"></td><th scope="row" role="rowheader">' + esc(D.totalLabel) + "</th>" +
-            '<td class="num phys" role="cell" data-label="' + esc(L[0]) + '">' + esc(usdRange(pmin, pmax)) + "</td>" +
-            '<td class="num ai" role="cell" data-label="' + esc(L[1]) + '">' + esc(usd(D.aiTotal)) + "</td></tr></tfoot>" +
-        "</table></div>" +
-        '<ul class="cost-notes reveal">' + D.notes.map(function (n) { return "<li>" + esc(n) + "</li>"; }).join("") + "</ul>" +
-      "</div></section>" +
-      divider +
-      '<section class="section" aria-labelledby="cost-means-title"><div class="container">' +
-        '<header class="section__head reveal"><p class="eyebrow">' + esc(D.pointsEyebrow) + '</p><h2 class="h2" id="cost-means-title">' + esc(D.pointsTitle) + "</h2></header>" +
-        '<ul class="dia-list means">' + D.points.map(function (t, i) { return '<li class="reveal" style="--d:' + (i * 0.1) + 's">' + esc(t) + "</li>"; }).join("") + "</ul>" +
-      "</div></section>" +
-      '<section class="section cta" aria-labelledby="cost-cta-title">' +
-        '<svg class="cta__art reveal-self" viewBox="0 0 200 400" aria-hidden="true" preserveAspectRatio="xMidYMid meet"><path pathLength="1" d="M100 2 198 200 100 398 2 200Z"/><path pathLength="1" d="M100 70 164 200 100 330 36 200Z"/></svg>' +
-        '<div class="container" style="position:relative">' +
-          '<h2 class="h2 reveal" id="cost-cta-title">' + esc(D.ctaTitle) + "</h2>" +
-          '<div class="cta__actions reveal">' +
-            '<a class="btn btn--primary magnetic" data-onboarding href="#">Start onboarding</a>' +
-            '<a class="btn btn--ghost magnetic" data-whatsapp href="#"><svg aria-hidden="true"><use href="#i-chat"/></svg>Chat on WhatsApp</a>' +
-          "</div>" +
-          '<p class="cost-back reveal"><a class="text-link" href="#top"><svg width="14" height="14" aria-hidden="true"><use href="#i-left"/></svg>' + esc(D.backLabel) + "</a></p>" +
-        "</div>" +
-      "</section>";
-  }
-
-  function initCounters() {
-    var box = $("#costSaving");
-    if (!box) return;
-    var nums = $$(".count", box);
-    function run() {
-      nums.forEach(function (el) {
-        var to = +el.getAttribute("data-to"), t0 = null, dur = 1500;
-        (function step(t) {
-          if (t0 === null) t0 = t;
-          var k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
-          el.textContent = usd(k < 1 ? Math.round(to * e / 10) * 10 : to);
-          if (k < 1) requestAnimationFrame(step);
-        })(performance.now());
-      });
-    }
-    if (!animateCounts) return;
-    var io = new IntersectionObserver(function (en) {
-      if (en[0].isIntersecting) { io.disconnect(); setTimeout(run, 200); }
-    }, { threshold: 0.4 });
-    io.observe(box);
-  }
-
-  /* ---------- 4c. Views: home and #cost, by hash, without reloading ---------- */
-  function initRouter() {
-    var home = $("#view-home"), cost = $("#view-cost");
-    if (!home || !cost) return;
-    var current = null, homeTitle = doc.title;
-    var costLinks = $$('#navMenu a[href="#cost"]');
-    function show(view) {
-      var was = current;
-      current = view;
-      root.setAttribute("data-view", view);
-      home.hidden = view !== "home";
-      cost.hidden = view !== "cost";
-      doc.title = view === "cost" ? COST_DATA.pageTitle : homeTitle;
-      costLinks.forEach(function (a) {
-        a.classList.toggle("is-active", view === "cost");
-        if (view === "cost") a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
-      });
-      if (view === "cost") {
-        $$('#navMenu a[href^="#"]:not([href="#cost"])').forEach(function (a) { a.classList.remove("is-active"); a.removeAttribute("aria-current"); });
-        film.settle();   // never replay the logo animation when coming back
-      }
-      return was !== null && was !== view;
-    }
-    function jumpTop() { try { window.scrollTo({ top: 0, left: 0, behavior: "instant" }); } catch (e) { window.scrollTo(0, 0); } }
-    function route(first) {
-      var id = location.hash.slice(1);
-      var changed = show(id === "cost" ? "cost" : "home");
-      if (id === "cost") {
-        if (changed || first) { jumpTop(); var h = $("#cost-title"); if (h && !first) h.focus({ preventScroll: true }); }
-        return;
-      }
-      if (!changed) return;   // ordinary in-page link on the home view: the browser scrolls as usual
-      var t = id && id !== "top" ? doc.getElementById(id) : null;
-      if (t) requestAnimationFrame(function () { t.scrollIntoView({ behavior: "instant", block: "start" }); });
-      else jumpTop();
-    }
-    window.addEventListener("hashchange", function () { route(false); });
-    route(true);
-    // "Back to top" scrolls within whichever view is open
-    $$("[data-to-top]").forEach(function (a) {
-      a.addEventListener("click", function (e) {
-        if (current === "cost") { e.preventDefault(); try { window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" }); } catch (x) { window.scrollTo(0, 0); } }
-      });
-    });
   }
 
   /* ---------- 5. Nav ---------- */
@@ -5962,19 +5764,22 @@ var COST_DATA = {
     var thumbs = [];
 
     function setRatio(r) { if (r > 0 && isFinite(r)) frame.style.setProperty("--ar", r.toFixed(4)); }
-    function probe(src, cb) { var im = new Image(); im.onload = function () { cb(true); }; im.onerror = function () { cb(false); }; im.src = src; }
 
-    function load(i, autoplay) {
+    function prime(i) {   // poster, caption and length, shown before the video file loads
       var item = list[i];
       current = i;
       fig.classList.remove("is-missing", "is-playing", "is-started", "is-buffering", "is-idle");
       setRatio(parseRatio(item.ratio) || 16 / 9);
-      video.removeAttribute("poster");
-      if (item.poster) probe(item.poster, function (ok) { if (ok && current === i) video.poster = item.poster; });
-      cap.innerHTML = "<b>" + esc(item.title || "") + "</b>" + (item.category ? "<span>" + esc(item.category) + "</span>" : "");
+      if (item.poster) video.poster = item.poster; else video.removeAttribute("poster");
+      cap.innerHTML = "<b>" + esc(item.title || "") + "</b>" + (item.category ? "<span>" + esc(item.category) + "</span>" : "") +
+        (item.caption ? '<span class="player__line">' + esc(item.caption) + "</span>" : "");
       phLabel.textContent = item.title || "";
       big.setAttribute("aria-label", "Play video: " + (item.title || ""));
-      seek.value = 0; seek.style.setProperty("--p", "0%"); tCur.textContent = "0:00"; tDur.textContent = "0:00";
+      seek.value = 0; seek.style.setProperty("--p", "0%"); tCur.textContent = "0:00"; tDur.textContent = item.duration ? fmtTime(item.duration) : "0:00";
+    }
+    function load(i, autoplay) {
+      var item = list[i];
+      prime(i);
       video.src = item.src;
       loaded = true;
       thumbs.forEach(function (t, k) { t.setAttribute("aria-current", k === i ? "true" : "false"); });
@@ -6085,6 +5890,7 @@ var COST_DATA = {
       }
     }
 
+    prime(0);
     // Load the first video only when the player comes near the screen; pause when it leaves.
     if ("IntersectionObserver" in window) {
       var near = new IntersectionObserver(function (entries) {
@@ -6113,7 +5919,7 @@ var COST_DATA = {
       img.classList.remove("is-ready");
       img.onload = function () { img.classList.add("is-ready"); };
       img.onerror = function () { el.classList.add("is-missing"); };
-      img.alt = p.title || "Poster";
+      img.alt = p.alt || p.title || "Poster";
       img.src = p.src;
       cap.textContent = p.title || "";
       phLabel.textContent = p.title || "";
@@ -6184,7 +5990,7 @@ var COST_DATA = {
       b.setAttribute("aria-label", "View poster: " + (p.title || "Poster " + (i + 1)));
       var r = parseRatio(p.ratio); if (r) b.style.setProperty("--ar", r);
       var img = doc.createElement("img");
-      img.alt = p.title || "Poster " + (i + 1);
+      img.alt = p.alt || p.title || "Poster " + (i + 1);
       img.loading = "lazy"; img.decoding = "async";
       img.addEventListener("load", function () {
         if (img.naturalWidth) b.style.setProperty("--ar", (img.naturalWidth / img.naturalHeight).toFixed(4));
@@ -6310,10 +6116,10 @@ var COST_DATA = {
 
   /* ---------- Start ---------- */
   fillText();
+  renderDelivery();
   renderPackages();
-  renderCost();
+  renderTestimonials();
   applyLinks();
-  root.setAttribute("data-view", location.hash === "#cost" ? "cost" : "home");
   initFilm();
   initNav();
   initPlayer();
@@ -6324,8 +6130,6 @@ var COST_DATA = {
   initCursor();
   initMagnetic();
   initAnchorFix();
-  initCounters();
-  initRouter();
 })();
 </script>
 </body>
